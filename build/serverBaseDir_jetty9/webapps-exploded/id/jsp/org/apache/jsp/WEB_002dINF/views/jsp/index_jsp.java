@@ -59,7 +59,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"en\">\n");
       out.write("<head>\n");
-      out.write("<title>Gradle + Spring MVC</title>\n");
+      out.write("<title>Report Impaired Driver</title>\n");
       out.write("\n");
       if (_jspx_meth_spring_url_0(_jspx_page_context))
         return;
