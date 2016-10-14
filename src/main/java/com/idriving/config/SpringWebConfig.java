@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
  
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.idriving.web" })
+@ComponentScan({ "com.idriving.controller" })
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
  
 	@Override

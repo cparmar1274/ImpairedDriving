@@ -4,7 +4,6 @@ apply plugin: 'eclipse-wtp'
 //apply plugin: 'jetty' //too old, Jetty6, use gretty
 apply plugin: 'org.akhikhl.gretty'
 apply plugin: 'idea'
-apply plugin: 'jacoco' //code coverage
 
 def springVersion = "4.2.4.RELEASE"
 def jdkVersion = 1.8
@@ -38,6 +37,9 @@ dependencies {
     compile 'org.springframework:spring-webmvc:' +springVersion
 	compile 'javax.servlet:jstl:' + jstlVersion
     compile 'org.springframework:spring-test:' + springVersion
+    compile 'org.springframework.data:spring-data-mongodb:1.9.4.RELEASE'
+    compile 'org.springframework.social:spring-social-facebook'
+    
     //exclude the build in hamcrest
     testCompile('junit:junit:' + junitVersion) {
         exclude group: 'org.hamcrest'
@@ -79,14 +81,4 @@ eclipse {
   }
 }
 
-jacoco {
-    toolVersion = "0.7.5+"
-    reportsDir = file("$buildDir/reports/jacoco")
-}
 
-jacocoTestReport {
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
-}

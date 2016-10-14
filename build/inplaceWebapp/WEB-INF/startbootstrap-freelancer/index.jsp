@@ -76,6 +76,9 @@
                         <span class="name">Start Bootstrap</span>
                         <hr class="star-light">
                         <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                        <span class="skills">${title}</span>
+                        <span class="skills">${msg}</span>
+                        <span class="skills">${fbData}</span>
                     </div>
                 </div>
             </div>
